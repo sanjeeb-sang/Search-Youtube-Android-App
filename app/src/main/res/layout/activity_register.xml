@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:errorEnabled="true">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email_atv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_email_black_24dp"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:errorEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_visibility_black_24dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:errorEnabled="true"
+                app:passwordToggleDrawable="@drawable/ic_visibility_black_24dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/confirm-password_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_end_color"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:singleLine="true" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/register_button"
+                style="@android:style/Widget.Holo.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableRight="@drawable/ic_person_white_24dp"
+                android:elevation="24dp"
+                android:text="Register" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
